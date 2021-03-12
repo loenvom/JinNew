@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.CommentActivity"
+    android:orientation="vertical">
+
+    // RecyclerView 控件用于动态显示历史评论
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/recyclerview_comment"
+        android:layout_weight="8"></androidx.recyclerview.widget.RecyclerView>
+    // 评论输入的文本框 
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:hint="说点什么吧"
+        android:fontFamily="cursive"
+        android:id="@+id/CommentText"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        ></EditText>
+    // 评论发送按钮
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="发送"
+        android:textSize="30dp"
+        android:textColor="#fff"
+        android:background="#7bed9f"
+        android:id="@+id/SendBtn"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_weight="1"></Button>
+</LinearLayout>

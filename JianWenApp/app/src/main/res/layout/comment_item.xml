@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/top_corner"
+    android:layout_marginBottom="30dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_gravity="center"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/comment_item_photo"
+            android:src="@mipmap/picture">
+
+        </de.hdodenhof.circleimageview.CircleImageView>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:text="惜败给"
+            android:textSize="30dp"
+            android:textColor="#000"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="40dp"
+            android:id="@+id/comment_item_nickname"
+            android:layout_weight="1"></TextView>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/comment_item_words"
+        android:textSize="22dp"
+        android:gravity="center"
+        android:background="@drawable/bottom_corner"
+        android:fontFamily="monospace"
+        android:padding="50dp"
+        ></TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="5dp"
+        android:textSize="18dp"
+        android:id="@+id/comment_item_time"
+        android:text="2020年9月"></TextView>
+</LinearLayout>

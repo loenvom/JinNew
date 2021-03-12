@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="4dp"
+    android:layout_marginRight="4dp"
+    android:layout_marginTop="4dp"
+    app:cardCornerRadius="4dp">
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="180dp"
+       android:orientation="vertical">
+    // 显示新闻图片
+    <ImageView
+        android:id="@+id/imgv_show"
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:background="@color/colorPrimary"/>
+    // 显示新闻标题
+    <TextView
+        android:id="@+id/tv_show"
+        android:maxLines="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/appbar_scrolling_view_behavior" />
+   </LinearLayout>
+</androidx.cardview.widget.CardView>

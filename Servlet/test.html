@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.js"></script>
+
+    <title>Document</title>
+</head>
+<body>
+    <img src="" alt="" id = "img">
+    <script>
+    
+        $.ajax({
+            url : 'http://192.168.212.107:8080/uploads/1.jpg',
+            type : 'get',
+            success : (res) => {
+                console.log(res)
+                console.log(res.length)
+                
+            },
+            error : (err) => {
+
+            }
+        })
+    </script>
+</body>
+</html>
